@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <title>Exemplo - API II</title>
+</head>
+<body>
+    <div id="container">
+
+        <h1>Exemplo 2 - Consumindo API Rest</h1>
+    <p>
+        O objetivo desse exemplo é consumir os dados provenientes de uma API REST e exibir esses dados em uma página HTML dinâmico e gráfico Google Charts gerado a partir de JavaScript.
+    </p>
+
+    <h3>Dados da API</h3>
+
+    <button id="btnObterDados" type="button"  onclick="carregarDados();">Obter Dados</button>
+
+    <div id="div-erro">...</div>
+
+    <div id="dados">
+        
+       <h3>Variação de preço</h3>
+       <div id="grafico-precos" class="area-grafico"></div>
+
+       <h3>Variação de negociações</h3>
+       <div id="grafico-volume" class="area-grafico"></div>
+       
+    </div>
+
+
+    </div>
+    
+
+
+</body>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script src="js/bitcoin.js" type="text/javascript"></script>
+</html>
